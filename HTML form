@@ -1,0 +1,61 @@
+
+<!--   This initates the form in HTML-->
+<form action='http://pagename.html" method="POST" name="my_form">
+
+<!-- adding the fieldset tag helps break your form up into readable sections and adds a box to the group-->
+
+<fieldset>
+	<legend align="center">First Group of Information</legend>
+	
+<!--The labele tag adds a label to the field item *Note the "text" for the for should match the text of the 
+ id element in the actual input of the item. See id below-->	
+	<label for="username">UserName: </label>
+		<!--this type is for adding a one line text box-->
+		<input type="text"  name="name of field" id="username">  
+		
+		
+	<label for="password">Password:</label>
+		<!--this type is for adding a password and hides the typed characters in the box-->
+		<input type="password" name="password" id="password">
+
+
+		<!--this type is for adding a radio button-->
+		<input type="radio" name="ex. gender"  value="Male">Male<br>
+		<input type="radio" name="ex. gender"  value="Female">Female<br>
+</fieldset>
+
+<!--this type is for adding a checkbox-->
+<input type="checkbox" name="ex. day of week"  value="Monday">Monday<br>
+<input type="checkbox" name="ex. day of week"  value="Tuesday">Tuesday<br>
+<input type="checkbox" name="ex. day of week"  value="Wednesday">Thursday<br>
+<input type="checkbox" name="ex. day of week"  value="Friday">Friday<br>
+
+
+<!--this type is for adding a box for multiple lines of text-->
+<textarea name="feedback"  rows="10"  cols="30"></textarea>
+
+
+<!--this type is for adding a selection drop down with multiple values-->
+<label for="firstgroup">Please highlight the relevant information from each dropdown</label>
+<select name=firstgroup id="firstgroup">
+	<optgroup label="City Your From">
+	<option>New York</option>
+	<option>Chicago</option>
+	<option>San Francisco</option>
+	</optgroup>
+	
+<!--2nd set of choices for option group number 2-->	
+	<optgroup label="State You Live in Now">
+	<option>New York</option>
+	<option>Illinois</option>
+	<option>California</option>
+	</optgroup>
+
+</select>
+
+
+<!--This allows the user to submit the form-->	
+<input type="submit"  Value="Submit Here">
+
+
+</form>
